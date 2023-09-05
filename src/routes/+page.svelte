@@ -9,7 +9,7 @@
 
 <Container>
     <Header />
-    <Grid variant="1/2">
+    <Grid cols="2">
         <GridItem span="1">
             <Text>
                 Hey, ich bin Timo und Frontend Entwickler. Ich liebe neue
