@@ -9,8 +9,8 @@
 
 <Container>
     <Header />
-    <Grid cols="2">
-        <GridItem span="1">
+    <Grid cols="3">
+        <GridItem span="2">
             <Text>
                 Hey, ich bin Timo und Frontend Entwickler. Ich liebe neue
                 Technologien und bin immer auf der Suche nach neuen
@@ -26,7 +26,7 @@
                 keine Ahnung, was ich sonst schreiben soll.
             </Text>
         </GridItem>
-        <GridItem span="2">Tolle Scheiße hier</GridItem>
+        <GridItem span="1">Tolle Scheiße hier</GridItem>
     </Grid>
 </Container>
 
