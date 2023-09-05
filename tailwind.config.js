@@ -3,8 +3,9 @@ export default {
   content: ['./src/**/*.{html,js,svelte,ts}'],
   theme: {
     fontFamily: {
-      sans: ['Graphik', 'sans-serif'],
+      sans: ['IBM Plex Sans', 'sans-serif'],
       serif: ['Merriweather', 'serif'],
+      mono: ['IBM Plex Mono', 'monospace'],
     },
     extend: {},
   },
