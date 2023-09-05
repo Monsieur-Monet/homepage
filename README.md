@@ -1,1 +1,3 @@
-This is a personal website, built using Svelte and Tailwind.
+This is a personal website.
+
+It's built using Svelte and Tailwind.
