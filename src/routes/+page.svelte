@@ -1,10 +1,11 @@
 <script>
     import "../app.css";
     import Container from "./container.svelte";
+    import Header from "./header.svelte";
 </script>
 
 <Container>
-    <div>Hello World</div>
+    <Header />
 </Container>
 
 <style lang="postcss">
