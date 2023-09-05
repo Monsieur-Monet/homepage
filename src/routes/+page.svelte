@@ -1,2 +1,14 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<script>
+    import "../app.css";
+    import Container from "./container.svelte";
+</script>
+
+<Container>
+    <div>Hello World</div>
+</Container>
+
+<style lang="postcss">
+    :global(html) {
+        background-color: theme(colors.gray.100);
+    }
+</style>
