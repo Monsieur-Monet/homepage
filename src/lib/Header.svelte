@@ -1,7 +1,7 @@
 <script>
-    import Headline from "./headline.svelte";
-import Icon from "./icon.svelte";
-    import MenuIcon from "./menu-icon.svelte";
+    import Headline from "./Headline.svelte";
+import Icon from "./Icon.svelte";
+    import MenuIcon from "./MenuIcon.svelte";
 
 
 </script>

@@ -1,10 +1,10 @@
 <script>
-    import GridItem from "$lib/grid-item.svelte";
-    import Grid from "$lib/grid.svelte";
-    import Text from "$lib/text.svelte";
+    import GridItem from "$lib/GridItem.svelte";
+    import Grid from "$lib/Grid.svelte";
+    import Text from "$lib/Text.svelte";
     import "../app.css";
-    import Container from "../lib/container.svelte";
-    import Header from "../lib/header.svelte";
+    import Container from "../lib/Container.svelte";
+    import Header from "../lib/Header.svelte";
 </script>
 
 <Container>
