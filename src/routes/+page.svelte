@@ -11,7 +11,7 @@
 <Container>
     <Header />
     <Spacing />
-    <Headline center="true" variant="h1" >Hey, hier entsteht eine tolle Website 🚀</Headline>
+    <Headline variant="h1" >Hey, hier entsteht eine tolle Website 🚀</Headline>
 </Container>
 
 <style lang="postcss">
