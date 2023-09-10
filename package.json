@@ -25,6 +25,7 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"@ibm/plex": "^6.3.0"
+		"@ibm/plex": "^6.3.0",
+		"sass": "^1.66.1"
 	}
 }

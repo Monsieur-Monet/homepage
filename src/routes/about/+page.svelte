@@ -2,10 +2,11 @@
 import Content from "$lib/Content.svelte";
 import Headline from "$lib/Headline.svelte";
 import Spacing from "$lib/Spacing.svelte";
+import ContentArea from "$lib/ContentArea.svelte";
 
 const imgUrl = new URL("/src/assets/timo.jpg", import.meta.url).href;
 </script>
-
+<ContentArea>
 <Content>
   <Headline variant="h2">Über mich</Headline>
   <Spacing/>
@@ -18,3 +19,4 @@ const imgUrl = new URL("/src/assets/timo.jpg", import.meta.url).href;
     </p>
   </div>
 </Content>
+</ContentArea>
