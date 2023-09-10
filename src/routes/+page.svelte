@@ -5,7 +5,7 @@
 
 </script>
 <ContentArea center>
-<Headline variant="h1" align="center"> Diese Seite ist noch in Arbeit.<br> Schau doch später nochmal vorbei. 🚀
-</Headline>
-<Spacing/>
+  <Headline variant="h1" align="center"> Diese Seite ist noch in Arbeit.<br> Schau doch später nochmal vorbei. <br>🚀
+  </Headline>
+  <Spacing/>
 </ContentArea>
