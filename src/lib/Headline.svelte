@@ -1,29 +1,30 @@
 <script lang="ts">
     export let variant: "h1" | "h2" | "h3" | "h4" | "h5" | "h6" = "h1";
+    export let align: "left" | "center" | "right" = "left";
 </script>
 
 {#if variant === "h1"}
-    <h1 class="text-4xl font-mono">
+    <h1 class="text-4xl font-mono text-{align}">
         <slot />
     </h1>
 {:else if variant === "h2"}
-    <h2 class="text-3xl font-mono">
+    <h2 class="text-3xl font-mono text-{align}">
         <slot />
     </h2>
 {:else if variant === "h3"}
-    <h3 class="text-2xl font-mono">
+    <h3 class="text-2xl font-mono text-{align}">
         <slot />
     </h3>
 {:else if variant === "h4"}
-    <h4 class="text-xl font-mono">
+    <h4 class="text-xl font-mono text-{align}">
         <slot />
     </h4>
 {:else if variant === "h5"}
-    <h5 class="text-lg font-mono">
+    <h5 class="text-lg font-mono text-{align}">
         <slot />
     </h5>
 {:else if variant === "h6"}
-    <h6 class="text-base font-mono">
+    <h6 class="text-base font-mono text-{align}">
         <slot />
     </h6>
 {/if}
