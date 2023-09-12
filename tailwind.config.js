@@ -7,7 +7,7 @@ export default {
             current: 'currentColor',
             'white': '#ffffff',
             'black': '#000000',
-            'primary': '#585e40',
+            'primary': '#CC3333',
         },
         fontFamily: {
             sans: ['IBM Plex Sans', 'sans-serif'],
