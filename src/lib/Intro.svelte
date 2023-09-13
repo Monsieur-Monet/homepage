@@ -18,13 +18,15 @@
 
     onMount(() => {
         let count = 0
-        let wordsArray = ["Hi", "Salut", "Hey"];
+        let wordsArray = ["Hi", "Salut", "Hey", "Hello"];
         setInterval(function () {
-            if (count <= 2) {
+            if (count < 4) {
                 document.getElementById("greeting").innerHTML = wordsArray.at(count)
                 count++
-            } else {
-                count = 0
+
+                if (count === 4) {
+                    count = 0;
+                }
             }
         }, 2000)
     })
@@ -33,7 +35,7 @@
 
 <div class="h-[100vh] w-full relative bg-black">
   <div id="greeting"
-       class="fixed translate-x-1/2 top-1/2 -translate-y-1/2 text-white text-[5rem] md:text-[10rem] font-mono mix-blend-difference">
+       class="fixed left-10 top-1/2 -translate-y-1/2 text-white text-[5rem] md:text-[10rem] font-mono mix-blend-difference">
     Hello
   </div>
   <img class="h-full w-full object-cover" src={imgUrl} alt="Timo"/>
