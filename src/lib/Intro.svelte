@@ -21,12 +21,16 @@
         let wordsArray = ["Hi", "Salut", "Hey", "Hello"];
         setInterval(function () {
             if (count < 4) {
-                document.getElementById("greeting").innerHTML = wordsArray.at(count)
-                count++
+                document.getElementById("greeting").style.opacity = "0";
+                setTimeout(function () {
+                    document.getElementById("greeting").innerHTML = wordsArray.at(count);
+                    document.getElementById("greeting").style.opacity = "1"
+                    count++
 
-                if (count === 4) {
-                    count = 0;
-                }
+                    if (count === 4) {
+                        count = 0;
+                    }
+                }, 500)
             }
         }, 2000)
     })
@@ -35,7 +39,7 @@
 
 <div class="h-[100svh] w-full relative bg-black">
   <div id="greeting"
-       class="fixed left-10 top-1/2 -translate-y-1/2 text-white text-[5rem] md:text-[10rem] font-mono mix-blend-difference">
+       class="fixed left-10 top-1/2 -translate-y-1/2 text-white text-[5rem] md:text-[10rem] font-mono mix-blend-difference transition-opacity">
     Hello
   </div>
   <img class="h-full w-full object-cover" src={imgUrl} alt="Timo"/>
