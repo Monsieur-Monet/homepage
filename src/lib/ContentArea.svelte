@@ -1,6 +1,6 @@
 <script>
     export let center;
 </script>
-<div class="flex flex-col h-full" class:m-auto={center}>
+<div class="flex flex-col h-[100vh]" class:m-auto={center}>
   <slot/>
 </div>
