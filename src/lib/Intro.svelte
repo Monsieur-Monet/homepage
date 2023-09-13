@@ -33,7 +33,7 @@
 </script>
 
 
-<div class="h-[100vh] w-full relative bg-black">
+<div class="h-[100svh] w-full relative bg-black">
   <div id="greeting"
        class="fixed left-10 top-1/2 -translate-y-1/2 text-white text-[5rem] md:text-[10rem] font-mono mix-blend-difference">
     Hello
