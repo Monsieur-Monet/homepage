@@ -38,9 +38,9 @@
 </script>
 
 <div class="h-[100svh] w-full relative bg-black">
-    <div class="fixed top-1/2 -translate-y-1/2 w-full z-10">
+    <div class="fixed top-1/4 md:top-1/2 -translate-y-1/2 w-full z-10">
         <div class="container mx-auto px-4">
-            <div class="flex gap-4 md:gap-8 flex-col md:flex-row items-center">
+            <div class="flex gap-4 md:gap-8 flex-col md:flex-row items-start">
                 <div
                     id="greeting"
                     class="text-white text-[5rem] md:text-[10rem] font-mono mix-blend-difference transition-opacity"

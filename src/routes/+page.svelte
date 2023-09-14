@@ -6,11 +6,11 @@
 </script>
 
 <ContentArea center>
-    <div class="mt-[40rem]">
+    <div class="mt-[20rem] md:mt-[40rem]">
         <Grid>
             <GridItem />
             <GridItem>
-                <div class="flex gap-12">
+                <div class="flex gap-12 flex-col md:flex-row">
                     <img
                         src={imgUrlTimo}
                         alt="Timo"
