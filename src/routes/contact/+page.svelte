@@ -55,6 +55,7 @@
     <input class="button" type="submit" value="Submit" />
   </form>
 </ContentArea>
+<Spacing
 
 <style lang="scss">
   .form-input {
