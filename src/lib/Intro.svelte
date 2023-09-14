@@ -48,11 +48,14 @@
     )}px"
     bind:this={header}
 >
-    <img
-        class="h-full w-full object-cover blur"
-        src={imgUrlIntro}
-        alt="Intro Pic"
-    />
+    <div>
+        <img
+            class="h-full w-full object-cover blur"
+            src={imgUrlIntro}
+            alt="Intro Pic"
+        />
+        <div class="overlay" />
+    </div>
     <a
         href="#after-intro"
         class="absolute block h-20 w-32 bottom-0 left-1/2 -translate-x-1/2 text-white"
@@ -77,3 +80,18 @@
 </div>
 
 <!-- Photo by <a href="https://unsplash.com/@kirp?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">AndrewKliatskyi</a> on <ahref="https://unsplash.com/photos/ZYuB4x5hA1Q?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> -->
+<style lang="scss">
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgb(31, 34, 51);
+        background: linear-gradient(
+            180deg,
+            rgba(31, 34, 51, 1) 0%,
+            rgba(0, 212, 255, 0) 100%
+        );
+    }
+</style>
