@@ -71,7 +71,7 @@
         <div class="flex gap-4 md:gap-8 flex-col md:flex-row items-start">
             <div
                 style="opacity: {greetingOpacity};"
-                class="text-white text-[5rem] md:text-[10rem] font-mono mix-blend-difference transition-opacity"
+                class="text-white text-[5rem] lg:text-[10rem] font-mono mix-blend-difference transition-opacity"
             >
                 {greetings[count]}<span class="text-primary">.</span>
             </div>

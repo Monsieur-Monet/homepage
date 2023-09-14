@@ -4,7 +4,6 @@
   import Footer from "$lib/Footer.svelte";
   import Header from "$lib/Header.svelte";
   import Intro from "$lib/Intro.svelte";
-  import Spacing from "$lib/Spacing.svelte";
   import "../app.css";
 
   let path: String;
@@ -23,7 +22,6 @@
   <Intro {afterIntro} />
 {/if}
 <Container>
-  <Spacing />
   <slot />
 </Container>
 <Footer />

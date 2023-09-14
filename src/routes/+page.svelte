@@ -1,20 +1,15 @@
 <script>
     import ContentArea from "$lib/ContentArea.svelte";
-    import Grid from "$lib/Grid.svelte";
-    import GridItem from "$lib/GridItem.svelte";
     const imgUrlTimo = new URL("/src/assets/timo.jpg", import.meta.url).href;
 </script>
 
-<ContentArea center>
-    <div class="mt-[20rem] md:mt-[40rem]">
-        <Grid>
-            <GridItem />
-            <GridItem>
-                <div class="flex gap-12 flex-col md:flex-row">
+<ContentArea center={false}>
+    <div class="relative w-full h-full">
+                <div class="absolute top-2/4 lg:top-1/2 -translate-y-1/3 lg:-translate-y-1/2 md:left-1/2 flex gap-12 flex-col lg:flex-row">
                     <img
                         src={imgUrlTimo}
                         alt="Timo"
-                        class="h-32 w-32 md:h-64 md:w-64 rounded-3xl"
+                        class="h-32 w-32 lg:h-64 lg:w-64 rounded-3xl"
                     />
                     <p class="text-white">
                         Hi, my name is Timo and I'm a front-end developer. I'm
@@ -22,7 +17,5 @@
                         websites and web applications.
                     </p>
                 </div>
-            </GridItem>
-        </Grid>
     </div>
 </ContentArea>

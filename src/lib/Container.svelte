@@ -1,3 +1,3 @@
-<div class="container mx-auto px-4 mt-24 lg:mt-20 flex flex-col flex-grow">
+<div class="container mx-auto px-4 flex flex-col flex-grow">
     <slot />
 </div>
