@@ -14,7 +14,7 @@
   </h1>
 {:else if variant === "h2"}
   <h2
-    class="text-3xl font-mono text-white"
+    class="text-2xl md:text-3xl font-mono text-white"
     class:text-left={align === "left"}
     class:text-center={align === "center"}
     class:text-right={align === "right"}
