@@ -14,6 +14,7 @@
     let greetingOpacity: 0 | 1 = 1;
 
     function scrollIntoView() {
+        console.log(afterIntro);
         afterIntro.scrollIntoView({ behavior: "smooth" });
     }
 
@@ -34,10 +35,17 @@
 
 <svelte:window on:scroll={scroll} />
 <svelte:body class="bg-primary" />
+<div class="h-[100svh] w-full bg-background" />
 <div
-    class="h-[100svh] w-full bg-black relative"
+    class="h-[100svh] w-full fixed top-0 left-0 z-0 overflow-hidden"
     style="opacity: {1 -
-        Math.min(headerPosY / header?.getBoundingClientRect().height, 1)}"
+        Math.min(
+            headerPosY / header?.getBoundingClientRect().height,
+            1
+        )}; top: {Math.min(
+        headerPosY,
+        header?.getBoundingClientRect().height
+    )}px"
     bind:this={header}
 >
     <img

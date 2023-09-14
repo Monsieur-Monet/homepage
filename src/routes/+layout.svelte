@@ -1,15 +1,17 @@
 <script lang="ts">
-  import "../app.css";
   import { page } from "$app/stores";
-  import Intro from "$lib/Intro.svelte";
-  import Header from "$lib/Header.svelte";
-  import Footer from "$lib/Footer.svelte";
   import Container from "$lib/Container.svelte";
+  import Footer from "$lib/Footer.svelte";
+  import Header from "$lib/Header.svelte";
+  import Intro from "$lib/Intro.svelte";
   import Spacing from "$lib/Spacing.svelte";
+  import "../app.css";
 
-  let path : String;
+  let path: String;
 
-  function getPath(currentPath : String) {
+  let afterIntro: HTMLDivElement;
+
+  function getPath(currentPath: String) {
     path = currentPath;
   }
 
@@ -18,11 +20,11 @@
 
 <Header />
 {#if path === "/"}
-  <Intro />
+  <Intro {afterIntro} />
 {/if}
 <Container>
   <Spacing />
   <slot />
 </Container>
 <Footer />
-<div id="after-intro" />
+<div bind:this={afterIntro} />
