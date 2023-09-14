@@ -1,4 +1,4 @@
 <script>
 </script>
 
-<div class="mt-36" />
+<div class="mt-24 md:mt-36" />
