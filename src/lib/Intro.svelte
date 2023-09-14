@@ -48,7 +48,7 @@
     )}px"
     bind:this={header}
 >
-    <div>
+    <div class="h-full">
         <img
             class="h-full w-full object-cover blur"
             src={imgUrlIntro}
@@ -73,7 +73,7 @@
                 style="opacity: {greetingOpacity};"
                 class="text-white text-[5rem] md:text-[10rem] font-mono mix-blend-difference transition-opacity"
             >
-                {greetings[count]}
+                {greetings[count]}<span class="text-primary">.</span>
             </div>
         </div>
     </div>
