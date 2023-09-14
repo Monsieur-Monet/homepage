@@ -16,9 +16,6 @@
     <a class="text-white" class:active={path === "/"} href="/"> Home </a>
   </div>
   <div>
-    <a class="text-white" class:active={path === "/about"} href="/about"> About </a>
-  </div>
-  <div>
     <a class="text-white" class:active={path === "/contact"} href="/contact"> Contact </a>
   </div>
   <Icon />
