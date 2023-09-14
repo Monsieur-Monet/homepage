@@ -9,7 +9,8 @@
   <Spacing />
   <Headline variant="h2">Contact Me</Headline>
   <p class="mt-10 text-white">
-    If you want to contact me about anything you can write me an e-mail
+    If you want to contact me just fill out the form below and I will get back
+    to you as soon as possible. 🙃
   </p>
   <form
     class="flex mt-10 flex-col gap-4"
@@ -45,7 +46,11 @@
       >
       <textarea class="form-input resize-none h-40" name="message" />
     </div>
-    <input type="hidden" name="redirectTo" value="https://www.tscheer.dev/success" />
+    <input
+      type="hidden"
+      name="redirectTo"
+      value="https://www.tscheer.dev/success"
+    />
     <input type="text" name="honeypot" style="display: none;" />
     <input class="button" type="submit" value="Submit" />
   </form>
