@@ -1,4 +1,4 @@
 <script>
-
 </script>
-<div class="mb-10"></div>
+
+<div class="mb-10" />

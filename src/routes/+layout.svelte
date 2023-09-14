@@ -1,27 +1,28 @@
-<script>
-    import "../app.css";
-    import {page} from "$app/stores";
-    import Intro from "$lib/Intro.svelte";
-    import Header from "$lib/Header.svelte";
-    import Footer from "$lib/Footer.svelte";
-    import Container from "$lib/Container.svelte";
-    import Spacing from "$lib/Spacing.svelte";
+<script lang="ts">
+  import "../app.css";
+  import { page } from "$app/stores";
+  import Intro from "$lib/Intro.svelte";
+  import Header from "$lib/Header.svelte";
+  import Footer from "$lib/Footer.svelte";
+  import Container from "$lib/Container.svelte";
+  import Spacing from "$lib/Spacing.svelte";
 
-    let path;
+  let path : String;
 
-    function getPath(currentPath) {
-        path = currentPath;
-    }
+  function getPath(currentPath : String) {
+    path = currentPath;
+  }
 
-    $: getPath($page.url.pathname);
+  $: getPath($page.url.pathname);
 </script>
-  <Header/>
+
+<Header />
 {#if path === "/"}
-  <Intro/>
+  <Intro />
 {/if}
 <Container>
-  <Spacing/>
-  <slot/>
+  <Spacing />
+  <slot />
 </Container>
-<Footer/>
-<div id="after-intro"></div>
+<Footer />
+<div id="after-intro" />

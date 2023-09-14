@@ -1,6 +1,7 @@
-<script>
-    export let center;
+<script lang="ts">
+  export let center : Boolean;
 </script>
-<div class="flex flex-col h-[100vh]" class:m-auto={center}>
-  <slot/>
+
+<div class="h-[100svh]" class:m-auto={center}>
+  <slot />
 </div>

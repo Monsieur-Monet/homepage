@@ -1,32 +1,27 @@
 <script lang="ts">
-    import {page} from '$app/stores';
-    import Icon from "$lib/Icon.svelte";
+  import { page } from "$app/stores";
+  import Icon from "$lib/Icon.svelte";
 
-    let path;
-    function getPath(currentPath) {
-        path = currentPath;
-    }
+  let path: String;
 
-    $: getPath($page.url.pathname);
+  function getPath(currentPath: string | String) {
+    path = currentPath;
+  }
+
+  $: getPath($page.url.pathname);
 </script>
 
 <div class="flex gap-4">
   <div>
-    <a class:active={path==='/'} href="/">
-      Home
-    </a>
+    <a class="text-white" class:active={path === "/"} href="/"> Home </a>
   </div>
   <div>
-    <a class:active={path==='/about'} href="/about">
-      About
-    </a>
+    <a class="text-white" class:active={path === "/about"} href="/about"> About </a>
   </div>
   <div>
-    <a class:active={path==='/contact'} href="/contact">
-      Contact
-    </a>
+    <a class="text-white" class:active={path === "/contact"} href="/contact"> Contact </a>
   </div>
-  <Icon/>
+  <Icon />
 </div>
 
 <style lang="scss">
@@ -35,4 +30,3 @@
     font-weight: bold;
   }
 </style>
-

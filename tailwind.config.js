@@ -8,6 +8,7 @@ export default {
             'white': '#ffffff',
             'black': '#000000',
             'primary': '#CC3333',
+            'background': '#1f2233',
         },
         fontFamily: {
             sans: ['IBM Plex Sans', 'sans-serif'],
